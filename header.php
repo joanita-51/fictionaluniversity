@@ -1,6 +1,15 @@
 !DOCTYPE html>
 <html>
   <head>
+    <meta charset="
+      <?php 
+        function bloginfo(){
+          echo'This function tells the web browser what type of characters or letters and numbers you are going to be using on the page';
+        }
+        bloginfo('charset')
+      ?>"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php 
         function wp_head(){
             echo("This function helps us to load css instead of using the link in the head section");

@@ -8,6 +8,15 @@
  greet('Jane','green');
 
 ?>
+<?php 
+  function doubleMe($x){
+    return $x*2;
+  }
+  function tripleMe ($x){
+    return $x*3;
+  }
+  echo tripleMe(doubleMe(5));
+?>
 <!-- some of the Wordpress prebuilt functions
    ?php bloginfo(); ?>
     ?php bloginfo('description'); ?>

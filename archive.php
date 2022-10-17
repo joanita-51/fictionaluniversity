@@ -5,27 +5,17 @@
       <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title">
             <?php 
-            function is_category(){
-                echo 'returns true if you are on the category archive screen';
+            function the_archive_title(){
+                echo 'returns all the archives no need of the multiple if statements';
             }
-            function single_cat_title(){
-                echo 'used to get the dynamic name of the category that you are currently viewing.';
-            }
-            function the_author(){
-                echo 'this returns the name of the author';
-            }
-            function is_author(){
-                echo 'returns true if you are on the author archive screen';
-            }
-            if(is_category()){
-                single_cat_title();
-        }
-
-if (is_author()){
-         echo 'Posts by'; the_author();
-        } ?></h1>
+            the_archive_title();?></h1>
         <div class="page-banner__intro">
-                <p>Keep up with our latest news.</p>
+                <p>
+                    <?php 
+                    function the_archive_description(){
+                        echo 'This focuses on the subtitles by displaying information on the subtitle';
+                    }
+                    the_archive_description(); ?></p>
         </div>
       </div>
     </div>
